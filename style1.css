@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Inika:wght@400;700&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+h1{
+    font-family: 'Inika', cursive;
+    color: #C49A6C;
+    text-shadow: 2px 2px 4px gray;
+    font-size: 70px;
+}
+h2{
+    font-family: 'Lilita One', cursive;
+    color: #C49A6C;
+    font-size: 35px;
+    font-weight: 500;
+}
+p{
+    font-family: 'Lilita One', cursive;
+    color: #6D6D6D;
+    font-size: 20px;
+    font-weight: 500;
+}
+nav {
+    background-color: #CDE7D8;
+}
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    gap: 5%;
+    padding: 20px;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+    font-family: Lilita One, cursive;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 20px;
+}
+ul a:hover {
+    background-color: aliceblue;
+    color: #CDE7D8  ;
+    padding: 20px;
+}
+body {
+    background-color: #FFF3E6;
+}
+#portada {
+    background-color: #FADADD;
+}
+#slogan {
+    text-align: center;
+    padding: 40px;
+h1{
+    font-family: 'Inika', cursive;
+    color: #C49A6C;
+    text-shadow: 2px 2px 4px gray;
+    font-size: 70px;
+}
+h2{
+    font-family: 'Lilita One', cursive;
+    color: #6D6D6D;
+    font-size: 30px;
+    font-weight: 500;
+}
+}
+
+.adoptar {
+  font-family: 'Lilita One', sans-serif;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.adoptar:hover {
+  background-color: #ff4b4b;
+  transform: scale(1.1);
+}
+.slides {
+    display: flex;
+    height: 240px;
+    width: 240px;
+}
+#nosotros {
+    text-align: center;
+    
+h2{
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 60px;
+    color: #C49A6C;
+    text-shadow: 2px 2px 4px gray;
+}
+p{
+    border-radius: 30px;
+    width: 50%;
+    margin: 50px;
+    padding: 25px;
+    background-color: #CDE7D8;
+    }
+ul{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-left: 40px;
+}
+}
+.donaciones {
+  font-family: 'Lilita One', sans-serif;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.donaciones:hover {
+  background-color: #ff4b4b;
+  transform: scale(1.1);
+}
+.voluntario {
+  font-family: 'Lilita One', sans-serif;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.voluntario:hover {
+  background-color: #ff4b4b;
+  transform: scale(1.1);
+}
+#img-nosotros {
+    position: absolute;
+    right: 300px;
+    top: 780px;
+    width: 200px;
+}
+#myv {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+img{
+    width: 200px;
+    height: 200px;
+}
+}
+.mision, .vision {
+    width: 50%;
+    background-color: #FADADD;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+h2{
+    padding: 20px;
+    font-size: 60px;
+    color: #C49A6C;
+    text-shadow: 2px 2px 4px gray;
+}
+}

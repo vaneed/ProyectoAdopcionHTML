@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Inika:wght@400;700&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+    background-color: #CDE7D8;
+}
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    gap: 5%;
+    padding: 20px;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+    font-family: Lilita One, cursive;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 20px;
+}
+ul a:hover {
+    background-color: aliceblue;
+    color: #CDE7D8  ;
+    padding: 20px;
+}
+body {
+    background-color: #FFF3E6;
+}
+.catalogo {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+}
+div {
+    width: 50%;
+    background-color: #FADADD;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+h2{
+    padding: 20px;
+    font-size: 50px;
+    color: #C49A6C;
+    text-shadow: 2px 2px 4px gray;
+}
+h3{
+    font-family: 'Lilita One', cursive;
+    color: #6D6D6D;
+    font-size: 25px;
+    font-weight: 200;
+    padding: 3px;
+}
+}
+h4 {
+  font-family: 'Lilita One', sans-serif;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+h4:hover {
+  background-color: #ff4b4b;
+  transform: scale(1.1);
+
+}

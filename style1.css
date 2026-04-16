@@ -74,7 +74,6 @@ h2{
   padding: 15px 35px;
   border-radius: 30px;
   text-decoration: none;
-  display: inline-block;
   transition: 0.3s;
 }
 
@@ -82,43 +81,68 @@ h2{
   background-color: #ff4b4b;
   transform: scale(1.1);
 }
-.slides {
-    display: flex;
-    height: 240px;
-    width: 240px;
+.carrusel{
+    width: 100%;
+    height: 300px;
+    margin-top: 0px;
+    overflow: hidden; 
 }
-#nosotros {
-    text-align: center;
-    
-h2{
+.slides{
+    display: flex;
+    width: max-content; 
+    animation: cambio 36s linear infinite;
+}
+
+.carrusel .slides img{
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+@keyframes cambio {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+#titulo{ 
     padding: 20px;
+    padding-bottom: 0px;
     margin-top: 20px;
     font-size: 60px;
     color: #C49A6C;
+    text-align: center;
     text-shadow: 2px 2px 4px gray;
 }
-p{
-    border-radius: 30px;
-    width: 50%;
-    margin: 50px;
-    padding: 25px;
-    background-color: #CDE7D8;
-    }
-ul{
-    display: flex;
-    justify-content: left;
-    gap: 20px;
-    margin-left: 40px;
+#nosotros {
+    text-align: center;
+  p{
+      border-radius: 30px;
+      width: 70%;
+      margin: 50px;
+      padding: 25px;
+      background-color: #CDE7D8;
+      }
+  ul{
+      display: flex;
+      justify-content: left;
+      gap: 20px;
+      margin-left: 40px;
+  }
 }
+#botones{
+    display: flex;
+    justify-content: center;
 }
 .donaciones {
   font-family: 'Lilita One', sans-serif;
   background-color: #ff6b6b;
   color: white;
-  padding: 15px 35px;
+  padding: 15px 45px;
   border-radius: 30px;
   text-decoration: none;
-  display: inline-block;
   transition: 0.3s;
 }
 
@@ -133,7 +157,6 @@ ul{
   padding: 15px 35px;
   border-radius: 30px;
   text-decoration: none;
-  display: inline-block;
   transition: 0.3s;
 }
 
@@ -141,16 +164,24 @@ ul{
   background-color: #ff4b4b;
   transform: scale(1.1);
 }
+#contenedor1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20%;
+}
+
 #img-nosotros {
-    position: absolute;
-    right: 300px;
-    top: 780px;
-    width: 200px;
+    padding-bottom: 40px;
+}
+#img-nosotros:hover {
+    transform: scale(1.1);
 }
 #myv {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+
 img{
     width: 200px;
     height: 200px;
@@ -169,4 +200,65 @@ h2{
     color: #C49A6C;
     text-shadow: 2px 2px 4px gray;
 }
+}
+.mision:hover , .vision:hover {
+    transform: scale(1.02);
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a8c3b0;
+  color: white;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  margin: 5px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) { /*S20*/
+  
+  #titulo {
+    font-size: 50px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  #contenedor1 {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #botones ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+  }
+  #myv {
+    flex-direction: column;
+  }
+  .mision, .vision {
+    width: 90%;
+    
+  }
+}
+
+@media (max-width: 1024px) { /*ipad*/
+  #nosotros p{
+      width: 400px;
+      height: 300px;
+    }
 }

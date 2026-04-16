@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Inika:wght@400;700&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+h1{
+    font-family: 'Inika', cursive;
+    color: #C49A6C;
+    text-shadow: 2px 2px 4px gray;
+    font-size: 70px;
+}
+h2{
+    font-family: 'Lilita One', cursive;
+    color: #C49A6C;
+    font-size: 35px;
+    font-weight: 500;
+}
+p{
+    font-family: 'Lilita One', cursive;
+    color: #6D6D6D;
+    font-size: 20px;
+    font-weight: 500;
+strong{
+    color: #C49A6C;
+    font-weight: 500;
+}
+}
+
+nav {
+    background-color: #CDE7D8;
+}
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    gap: 5%;
+    padding: 20px;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+    font-family: Lilita One, cursive;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 20px;
+}
+ul a:hover {
+    background-color: aliceblue;
+    color: #CDE7D8  ;
+    padding: 20px;
+}
+body {
+    background-color: #FFF3E6;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+section {
+    width: 80%;
+    background-color: #FADADD;
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+    margin-left: 140px;
+}
+.foto, .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.foto:hover {
+    transform: scale(1.06);
+}
+
+.solicitud {
+    align-items: center;
+  font-family: 'Lilita One', sans-serif;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+  width: 200px;
+}
+
+.solicitud:hover {
+  background-color: #ff4b4b;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    section {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+    }
+    .foto, .info {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+   section{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+    }
+    .foto, .info {
+        margin-bottom: 20px;
+    }
+}

@@ -11,15 +11,15 @@ h1{
 }
 h2{
     font-family: 'Lilita One', cursive;
-    color: #C49A6C;
+    color: #6D6D6D;
     font-size: 35px;
-    font-weight: 300;
+    font-weight: 500;
 }
 p{
     font-family: 'Lilita One', cursive;
     color: #6D6D6D;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
 }
 nav {
     background-color: #CDE7D8;
@@ -47,7 +47,40 @@ ul a:hover {
 body {
     background-color: #FFF3E6;
     text-align: center;
-    margin: 0;
+}
+.collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+}
+.collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.collage img:hover {
+    transform: scale(1.3);
+}
+.collage img:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.collage img:nth-child(7) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.collage img:nth-child(10) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+@media (max-width: 768px) {
+  .collage {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .footer {
   display: flex;
@@ -67,32 +100,31 @@ body {
   color: white;
   text-decoration: none;
 }
-#enviar {
-  align-items: center;
-  text-align: center;
-  font-family: 'Lilita One', sans-serif;
-  background-color: #ff6b6b;
-  color: white;
-  padding: 15px 15px;
-  border-radius: 30px;
-  text-decoration: none;
-  display: inline-block;
-  transition: 0.3s;
-  width: 100px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
+@media (max-width: 768px) { /*S20*/
+  
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 45px;
+  }
 
-#enviar:hover {
-  background-color: #ff4b4b;
-  transform: scale(1.1);
-}
+  h2 {
+    font-size: 18px;
+    padding: 0 10px;
+  }
 
-@media (max-width: 768px) {
   nav ul {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1024px) { /*ipad*/
+  
+  footer{
+    flex-direction: column;
+    text-align: center;
   }
 }

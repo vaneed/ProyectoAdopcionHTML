@@ -3,6 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+h2{
+    font-family: 'Lilita One', cursive;
+    color: #C49A6C;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
 nav {
     background-color: #CDE7D8;
 }
@@ -30,17 +37,18 @@ body {
     background-color: #FFF3E6;
 }
 .catalogo {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     gap: 20px;
+    grid-template-columns: repeat(4,1fr);
 img{
     width: 200px;
     height: 200px;
     border-radius: 100px;
 }
 }
-div {
-    width: 50%;
+.amimo {
+    width: 90%;
     background-color: #FADADD;
     padding: 25px;
     border-radius: 20px;
@@ -60,6 +68,9 @@ h3{
     padding: 3px;
 }
 }
+.amimo:hover {
+    transform: scale(1.05);
+}
 h4 {
   font-family: 'Lilita One', sans-serif;
   background-color: #ff6b6b;
@@ -75,4 +86,57 @@ h4:hover {
   background-color: #ff4b4b;
   transform: scale(1.1);
 
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a8c3b0;
+  color: white;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  margin: 5px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .catalogo {
+    grid-template-columns: 1fr;
+  }  
+  .amimo {
+    width: 86%;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .catalogo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .amimo {
+    width: 92%;
+  }
+  h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
 }
